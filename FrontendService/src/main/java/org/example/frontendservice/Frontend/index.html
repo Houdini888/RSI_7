@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+<!--    <div class="control-panel">-->
+<!--        <button class="action-button" onclick="setAction('READ')">Read Car</button>-->
+<!--        <button class="action-button" onclick="setAction('CREATE')">Create Car</button>-->
+<!--        <button class="action-button" onclick="setAction('UPDATE')">Update Car</button>-->
+<!--        <button class="action-button" onclick="setAction('DELETE')">Delete Car</button>-->
+<!--        <button class="action-button" onclick="setAction('DAMAGE')">Damage Car</button>-->
+<!--        <button class="action-button" onclick="setAction('REPAIR')">Repair Car</button>-->
+<!--    </div>-->
+
+    <form id="messageForm">
+        <input type="number" id="messageId" name="messageId" required placeholder="ID">
+        <input type="text" id="messageText" name="messageText" required placeholder="Text">
+
+    </form>
+    <button class="save-button" id="saveButton">Create message</button>
+    <button class="list-button" onclick="toggleListButton()" id="listButton">List All Messages</button>
+
+    <table id="messageTable">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Text</th>
+            <th>Encrypted Text</th>
+        </tr>
+        </thead>
+        <tbody id="messageTableBody">
+        </tbody>
+    </table>
+</div>
+
+<!--<div class="messages" id="messagesSection">Messages:</div>-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="list_all.js"></script>
+<script src="add.js"></script>
+
+
+</body>
+</html>
